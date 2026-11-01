@@ -43,14 +43,12 @@ int task2(void) {
 
     do {
         int c;
-        int digits = 0;
         int count = 0;
 
         printf("Введите число: ");
 
         while ((c = getchar()) != '\n') {
             if (c >= '0' && c <= '9') {
-                digits++;
                 if (c > '5') {
                     count++;
                 }
